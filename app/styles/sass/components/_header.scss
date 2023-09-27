@@ -1,0 +1,110 @@
+.header{
+    position: relative;
+    font-family: "PTSansRegular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    &__top{
+        background-color: var(--black-color);
+    }
+    &__bottom{
+        background-color: #0F0F0F;
+        align-content: center;
+    }
+    &__wrapper-top{
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info,
+    &__account-list{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    &__nav{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__tel{
+        position: relative;
+        color: var(--gray-color);
+        padding: 14px 0 14px 31px;
+    }
+    &__tel:hover,
+    &__account-link:hover{
+        color: var(--white-color);
+        transition: color 0.3s ease-in-out;
+    }
+    &__tel::before{
+        position: absolute;
+        left:0px;
+        content: url(../../../images/tel.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__account-link{
+        position: relative;
+        padding: 14px 31px 14px 31px;
+        color: var(--gray-color);
+    }
+    &__account-link::before{
+        position: absolute;
+        left:0px;
+        top: 16px;
+        content: url(../../../images/login.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__list-menu,
+    &__list-score{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__block{
+        display: flex;
+    }
+    &__link-menu{
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        padding: 31px 20px;
+        background-color: inherit;
+        color: var(--gray-color);
+    }
+    &__link-score{
+        padding: 29px 20px;
+    }
+    .active{
+        background-color: #1F1F1F;
+        color: var(--white-color);
+    }
+    &__link-menu:hover,
+    &__link-score:hover{
+        background-color: #1F1F1F;
+        color: var(--white-color);
+        transition: (color, background-color) 0.3s ease-in-out;
+    }
+}
+@media (max-width:674px) {
+    .header{
+        &__list-menu{
+            display: none;
+        }
+        &__list-score{
+            margin-right: 50px;
+        }
+    }
+}
+@media (max-width:550px) {
+    .header{
+        &__info{
+            display: none;
+        }
+        &__account-list{
+            margin-left: auto;
+        }
+    }
+}

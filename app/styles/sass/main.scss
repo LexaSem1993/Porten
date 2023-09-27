@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "PlayfairDisplayBold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/PlayfairDisplayBold.woff2") format("woff2");
+    font-display: swap;
+    }
+@font-face {
+    font-family: "PlayfairDisplayRegular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/PlayfairDisplayRegular.woff2") format("woff2");
+    font-display: swap;
+    }    
+@font-face {
+    font-family: "PTSansBold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/PTSansBold.woff2") format("woff2");
+    font-display: swap;
+    }
+@font-face {
+    font-family: "PTSansRegular";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/PTSansRegular.woff2") format("woff2");
+    font-display: swap;
+    }
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gray-color:#969696;
+    --black-color:#000;
+    --white-color:#ffffff;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+    display: flex
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+a {
+    text-decoration: none;
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+.span-line{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 1px;
+    background-color: var(--white-color)
+}
+.img{
+    display: block;
+}
+.btn{
+    width: max-content;
+    margin: 0 auto;
+    padding: 12px 28px;
+    background-color:transparent;
+    color: var(--white-color);
+    text-align: center;
+    font-family: "PTSans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    border: 1px solid var(--white-color)
+}
+.btn:hover{
+    background-color: var(--gray-color);
+    transition: background-color 0.3s ease-in-out;
+}
+@media (max-width:425px) {
+    .btn{
+        font-size: 14px;
+    }
+}
+.main-collection{
+    display: flex;
+}
+@import "./components/header";
+@import "./components/burger";
+@import "./components/footer";
+@import "./components/hero";
+@import "./components/new-season";
+@import "./components/new-collection";
+@import "./components/collection";
+@import "./components/new-goods";
+@import "./components/our-brands";
+@media (max-width:1440px) {
+    .main-collection{
+        flex-direction: column;
+    }
+}

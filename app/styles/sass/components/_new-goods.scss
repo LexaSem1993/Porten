@@ -1,0 +1,45 @@
+.new-goods{
+    background-color: var(--black-color);
+    &__title{
+        margin-top: 120px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family:"PlayfairDisplayBold", sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: var(--white-color);
+    }
+    &__list{
+        margin-top: 81px;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 23px;
+        margin-bottom: 120px;
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    &__subtitle{
+        font-family: "PlayfairDisplayRegular", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        color: var(--white-color);
+        margin-bottom: 10px;
+    }
+    &__price{
+        font-family: "PlayfairDisplayBold", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--white-color);
+    }
+}

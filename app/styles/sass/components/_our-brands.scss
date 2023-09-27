@@ -1,0 +1,42 @@
+.our-brands{
+    background-color: var(--black-color);
+    &__content{
+        margin: 0 auto;
+    }
+    &__title{
+        margin-bottom: 40px;
+        color: var(--white-color);
+        text-align: center;
+        font-family: "PlayfairDisplayBold", sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    &__list{
+        margin-top: 40px;
+        margin-bottom: 74px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        gap: 30px;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:1440px) {
+    .our-brands{
+        &__list{
+            max-width: 540px;
+        }
+    }
+}
+@media (max-width:570px) {
+    .our-brands{
+        &__list{
+            max-width: 260px;
+        }
+    }
+}
